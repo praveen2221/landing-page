@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Figma Land</title>
+        <link rel="stylesheet" href="./css/index.css" />
+    </head>
+    <body>
+        <div class="body">
+            <div class="main-container">
+                <div class="nav-bar">FIGMA L<span class="a">A</span>ND</div>
+                <div class="headings">
+                    <a>Home</a>
+                    <a>Product</a>
+                    <a>About</a>
+                    <a>Contact</a>
+                </div>
+                <div class="button">
+                    <button class="log-in">Log in</button>
+                </div>
+
+                <div id="mybtn" class="menu-image">
+                    <img class="image-fit"
+                        src="https://d3vvmt2ub6odwk.cloudfront.net/static/jspl/dist/images/icons/menu.png"
+                        alt="" />
+                </div>
+                <div id="mymodal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <div>Home</div>
+                            <div>Product</div>
+                            <div>About</div>
+                            <div>Contact</div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var modalStyle=document.getElementById("mymodal");
+                    var myButton=document.getElementById("mybtn");
+                    var span=document.getElementsByClassName("close")[0];
+                
+                    myButton.onclick=function(){
+                        modalStyle.style.display="block";
+                    }
+                
+                    span.onclick=function(){
+                        modalStyle.style.display="none";
+                    }
+                
+                    window.onclick=function(event){
+                        if (event.target == modalStyle) {
+                            modalStyle.style.display="none";
+                        }
+                    }
+                </script>
+            </div>
+            <div class="text-area">
+                <div class="introduction">
+                    Work at the speed of thought
+                </div>
+                <div class="intro">Most calendars are designed for teams.Slate
+                    id designed for freelancers who want to simple way to plan
+                    their schedule
+                </div>
+                <div class="buttons">
+                    <button class="try-for-free">Try for free</button>
+                    <button class="learn-more">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
